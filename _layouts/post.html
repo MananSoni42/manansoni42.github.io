@@ -6,6 +6,13 @@ layout: default
 # © 2017-2019 Cotes Chung
 # MIT Licensed
 ---
+<link rel="stylesheet" href="/assets/css/ribbon.css">
+
+{% if page.demo %}
+<div class="corner-ribbon top-right sticky blue">
+  <a id="demo-link" href="{{ page.demo }}" target="_blank">Have a look</a>
+</div>
+{% endif %}
 
 <div class="row">
 
