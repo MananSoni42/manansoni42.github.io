@@ -4,6 +4,7 @@ author: Manan Soni
 date: 2019-10-20 00:42:00 +0530
 categories: [Web Development,Introduction]
 tags: [computer science,web development,cs50]
+gh: https://github.com/MananSoni42/web-dev
 ---
 
 Learning Full stack development though [CS50's Web Programming with Python and Javascript](https://www.youtube.com/watch?v=EOZDjqwvVG8&list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5&index=1).

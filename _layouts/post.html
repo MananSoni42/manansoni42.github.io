@@ -8,6 +8,7 @@ layout: default
 ---
 <link rel="stylesheet" href="/assets/css/ribbon.css">
 
+<!-- demo ribbon -->
 {% if page.demo %}
 <div class="corner-ribbon top-right sticky blue">
   <a id="demo-link" href="{{ page.demo }}" target="_blank">Have a look</a>
@@ -21,6 +22,16 @@ layout: default
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
       <h1 data-toc-skip>{{ page.title }}</h1>
+
+      {% if page.gh %}
+      <div style="float: right">
+
+      <!-- link to gh repo -->
+      <a href="{{page.gh}}" target="_blank">
+        <i class="fab fa-github fa-lg" style="font-size:36px"></i>
+      </a>
+      </div>
+      {% endif %}
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
