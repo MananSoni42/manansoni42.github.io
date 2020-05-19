@@ -7,29 +7,22 @@ tags: [computer science,machine learning,unsupervised learning,recommendation sy
 demo: http://movie42-app.herokuapp.com/
 gh: https://github.com/MananSoni42/Movie-recommendations
 ---
-You watch a few movies on Netflix and it starts to know your taste. It knows the movies that you will like and recommends accordingly! How does it know?  
-There are a lot of algorithms that can be used for Content recommendations. Although content providers like Netflix use much more sophisticated algorithms, we will explore a relatively simple but powerful apporach known as Collaborative filtering.
+
+You watch a few movies on Netflix, and it starts to know your taste. It identifies the films that you will like and recommends accordingly! How does it know?  
+There are a lot of algorithms that can be used for Content recommendations. Although content providers like Netflix use much more sophisticated algorithms, we will explore a relatively simple but powerful approach known as Collaborative filtering.
 
 ## Collaborative filtering
 We will be using a **neighborhood based item-item Collaborative Filtering**.   
 consider a simplified system which has 3 users and 10 movies. Now a new user (Arthur) enters the system. Arthur has rated only 2 movies so far. **Our goal is to recommend movies to Arthur**. For simplicity, movie ratings in our system are integers between 1 and 5. The table below gives a snapshot of our system:
 
 ### Ratings
-<table>
-  <colgroup>
-  <col width="20%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  </colgroup>
+<table class="table table-responsive">
   <thead>
-    <tr class="header">
-    <th></th>
-    <th>Movie 1</th><th>Movie 2</th>
-    <th>Movie 3</th><th>Movie 4</th>
-    <th>Movie 5</th><th>Movie 6</th>
+    <tr>
+      <th></th>
+      <th>Movie 1</th><th>Movie 2</th>
+      <th>Movie 3</th><th>Movie 4</th>
+      <th>Movie 5</th><th>Movie 6</th>
     </tr>
   </thead>
   <tbody>
@@ -62,17 +55,13 @@ consider a simplified system which has 3 users and 10 movies. Now a new user (Ar
 
 <details>
 <summary markdown="span">**Movies available**</summary>
-<table>
-  <colgroup>
-  <col width="20%" />
-  <col width="30%" />
-  <col width="50%" />
-  </colgroup>
+
+<table class="table table-responsive scroll">
   <thead>
-    <tr class="header">
-    <th>Movie ID</th>
-    <th>Name</th>
-    <th>Genres</th>
+    <tr>
+      <th>Movie ID</th>
+      <th>Name</th>
+      <th>Genres</th>
     </tr>
   </thead>
   <tbody>
@@ -111,14 +100,14 @@ consider a simplified system which has 3 users and 10 movies. Now a new user (Ar
 </details>
 <br>
 
-Let's move on. We want to recommend movies to Arthur. We will use a simple approach - predict the ratings Arthur will give to unseen movies. Then we can easily recommend movies by recommending the highest rated movies that Arthur hasn't seen yet. The basic idea of computing ratings is based on a notion of similarity. We need to find movies which are more/less similar based on the rating matrix given above.
+Let's move on. We want to recommend movies to Arthur. We will use a simple approach - predict the ratings Arthur will give to unseen movies. Then we can easily recommend movies by suggesting the highest rated movies that Arthur hasn't seen yet. The basic idea of computing ratings is based on a notion of similarity. We need to find movies which are more/less similar based on the rating matrix given above.
 
 ### Notation
-R is an MxN rating matrix. Consequently M denotes the total number of users and N denotes the total number of movies.  
+R is an MxN rating matrix. Consequently, M denotes the total number of users, and N denotes the total number of movies.  
 
 ### Algorithm
 Let's define a similarity function.
-This is known as the **cosine similarity** function. It's name is due to the fact that **it treats each movie (A column in the rating matrix) as a vector and computes the cosine distance between 2 given movies**.
+This is known as the **cosine similarity** function. It's named so as **it treats each movie (A column in the rating matrix) as a vector and computes the cosine distance between 2 given movies**.
 ![sim_easy](/assets/img/post_imgs/rec/sim_easy.png)
 Here is the full version if you need to code it yourself:
 ![sim_full](/assets/img/post_imgs/rec/sim_full.png)
@@ -131,21 +120,13 @@ Given a movie that Arthur hasn't seen we take a weighted average of the movies w
 ![rating_formula](/assets/img/post_imgs/rec/rating.png)
 Thus when predicting ratings for a particular movie, ratings of similar movies have a greater impact on the predicted rating. That's it!  
 Using the above formula, we get the following predictions
-<table>
-  <colgroup>
-  <col width="20%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  </colgroup>
+<table class="table table-responsive scroll">
   <thead>
-    <tr class="header">
-    <th></th>
-    <th>Movie 1</th><th>Movie 2</th>
-    <th>Movie 3</th><th>Movie 4</th>
-    <th>Movie 5</th><th>Movie 6</th>
+    <tr>
+      <th></th>
+      <th>Movie 1</th><th>Movie 2</th>
+      <th>Movie 3</th><th>Movie 4</th>
+      <th>Movie 5</th><th>Movie 6</th>
     </tr>
   </thead>
   <tbody>
@@ -160,37 +141,29 @@ Using the above formula, we get the following predictions
 According to our reccomendation engine, **Arthur should watch Movie 5 - Jumanji next**.
 
 ### Improvements
-Whatwe described was only a very simple system. There a lot of ways in which we can tweak the above system to get better recommendations. In this section, I will demonstrate some of the improvements that I did using the same example as above.
+What we described was only a simple system. We can do much better by tweaking the above system to get better recommendations. In this section, I will demonstrate some of the improvements that I did, using the same example as above.
 #### Biases
-every person in the above database has some bias when they rate movies, in the example above, Zaphod tends to give out 4-5 star reviews easily while Trillian is much more conservative. To remove this bias, we subtract the average rating of a user while calculating the similarity function.  
+every person in the above database has some bias when they rate movies. In the example above, Zaphod tends to give out 4-5 star reviews easily while Trillian is much more conservative. To remove this bias, we subtract the average rating of a user while calculating the similarity function.  
 The updated function is as follows:
 ![sim_mod](/assets/img/post_imgs/rec/sim_mod.png)
-Similarly, while predicting the ratings we predict how high/low the rating will be relative to the average. This has the advantage of producing zeros in the empty  values (since we fill it with the average value).  
+Similarly, while predicting the ratings, we predict how high/low the rating will be relative to the average. This has the advantage of producing zeros in the empty values (since we fill it with the average value).  
 ![rating_mod](/assets/img/post_imgs/rec/rating_mod.png)
 Let us see the correlation between the movies and our new predictions.
 ![mod_sim](/assets/img/post_imgs/rec/mod_sim.png)
-> From the above graph it is clear that the movies Toy Story 1 and Toy Story 2 are very similar. And we are able to infer this from just their ratings and without any other information!  
+> From the above graph, it is clear that the movies Toy Story 1 and Toy Story 2 are very similar. And we can infer this from just their ratings and without any other information!  
 
 > Another interesting fact to note is that users who liked Toy Story 2 or Jumanji did not like 12 Angry men. This seems likely as the former are children's movies while the latter is a classic movie meant for adults.  
 
-> From the graph we can even start to identify genres - All children's genres have a positive similarity with each other and a negative similarity with the rest.
+> From the graph, we can even start to identify genres - All children's genres have a positive similarity with each other and a negative similarity with the rest.
 
 The final predictions are:
-<table>
-  <colgroup>
-  <col width="20%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  <col width="9%" /><col width="9%" />
-  </colgroup>
+<table class="table table-responsive scroll">
   <thead>
-    <tr class="header">
-    <th></th>
-    <th>Movie 1</th><th>Movie 2</th>
-    <th>Movie 3</th><th>Movie 4</th>
-    <th>Movie 5</th><th>Movie 6</th>
+    <tr>
+      <th></th>
+      <th>Movie 1</th><th>Movie 2</th>
+      <th>Movie 3</th><th>Movie 4</th>
+      <th>Movie 5</th><th>Movie 6</th>
     </tr>
   </thead>
   <tbody>
@@ -204,13 +177,13 @@ The final predictions are:
 </table>
 
 ### Genres
-Another thing that I do is explicitly using the genres of each movie. Thus, instead of getting only general recommendations we can also get genre-specific recommendations. This can be done by masking the rating matrix i.e Suppose we need recommendations in the 'Drama' genre. We can apply a mask G such that the matrix G*R is zero for all movies that are not in the 'Drama' genre.
+Another thing that I do is explicitly using the genres of each movie. Thus, instead of getting only general recommendations, we can also get genre-specific recommendations. This can be done by masking the rating matrix, i.e. Suppose we need recommendations in the 'Drama' genre. We can apply a mask G such that the matrix G*R is zero for all movies that are not in the 'Drama' genre.
 
 ## Movies
-To try out what I learned, I played around with the [MovieLens](https://grouplens.org/datasets/movielens/) database and created a simple Movie recommender system.
+To try out what I learned, I played around with the [MovieLens](https://grouplens.org/datasets/movielens/) database and created a simple Movie recommender system. The dataset consists of 1 million ratings for about 6000 movies.
 ### Usage
-The Recommender can be used offline / online. Both versions are compatible and only the interface is different - the data and algorithms are the same.
-### Command line interface
+The Recommender can be used offline / online. Both versions are compatible, and only the interface is different - the data and algorithms are the same.
+### Command-line interface
 This version is hosted on the master branch of the repository.
 Follow the installation guide given below.  Then use movie.py to get recommendations
 ```
@@ -228,25 +201,25 @@ Navigate to [http://movie42-app.herokuapp.com/](http://movie42-app.herokuapp.com
 ```
 You can search for movies using the search bar at the top.
 There are 3 buttons:
-* Recommend - Recommends movies to you based on your ratings (Needs atleast 5 ratings for recommendations)
+* Recommend - Recommends movies to you based on your ratings (Needs at least 5 ratings for recommendations)
 * My movies - Lists the movies that you have rated
 * Clear - Clears all ratings so that you can start fresh
 ```
 ## Installing locally
-This project has 2 interfaces - They are hosted on different branches on the main repository. Although both the versions are very similar and are compatible with each other. It is recomnended that you install each one of them in different directories.
+This project has 2 interfaces - They are hosted on different branches on the central repository. Although both the versions are very similar and are compatible with each other. It is recommended that you install each one of them in different directories.
 ### Setting up the CLI
 Clone the repository [Movie-Recommendations](https://github.com/MananSoni42/Movie-recommendations) and Pull the master branch
 ```terminal
 git clone https://github.com/MananSoni42/Movie-recommendations.git
 git pull origin master
 ```
-Install the required dependancies
+Install the required dependencies
 ```terminal
 apt-get install python3 python3-pip
 pip3 instal -r requirements.txt
 ```
 Download the dataset from [here](http://files.grouplens.org/datasets/movielens/ml-1m.zip), unzip it and place it in the dataset directory
-After this the structure of the dataset directory should be:
+After this, the structure of the dataset directory should be:
 ```terminal
 ├── Movie-recommendations/
 └── dataset/
@@ -277,7 +250,7 @@ git clone https://github.com/MananSoni42/Movie-recommendations.git
 git checkout web
 git pull origin web
 ```
-Install the required dependancies
+Install the required dependencies
 ```terminal
 apt-get install python3 python3-pip
 pip3 instal -r requirements.txt
