@@ -10,7 +10,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="google-site-verification" content="site.google_site_verification" />
-  
+
   <title>
   {%- if page.layout == "home" -%}
     {{- site.title -}}
@@ -102,6 +102,10 @@
 
   {% endif %}
 
+  <!-- MathJax -->
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 
   <!-- jquery -->
   <link rel="preload" as="script"

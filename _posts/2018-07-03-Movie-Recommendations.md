@@ -3,7 +3,7 @@ title: Movie Recommendations using Collaborative Filtering
 author: Manan Soni
 date: 2018-07-03 00:42:00 +0530
 categories: [Machine Learning,Unsupervised]
-tags: [computer science,machine learning,unsupervised learning,recommendation system,live]
+tags: [computer science,machine learning,unsupervised learning,recommendation system,live,cool]
 demo: http://movie42-app.herokuapp.com/
 gh: https://github.com/MananSoni42/Movie-recommendations
 ---
@@ -107,17 +107,32 @@ R is an MxN rating matrix. Consequently, M denotes the total number of users, an
 
 ### Algorithm
 Let's define a similarity function.
-This is known as the **cosine similarity** function. It's named so as **it treats each movie (A column in the rating matrix) as a vector and computes the cosine distance between 2 given movies**.
-![sim_easy](/assets/img/post_imgs/rec/sim_easy.png)
-Here is the full version if you need to code it yourself:
-![sim_full](/assets/img/post_imgs/rec/sim_full.png)
+This is known as the **cosine similarity** function. It's named so as **it treats each movie (A column in the rating matrix) as a vector and computes the cosine distance between 2 given movies**.  
+$$
+sim(M_p, M_q) = cos(\theta) = \cfrac{\vert \vec{M_p} \cdot \vec{M_q} \vert}{\vert \vec{M_p} \vert \cdot \vert \vec{M_q} \vert}
+$$  
+
+Here is the full version if you need to code it yourself:  
+$$
+sim(M_p, M_q) = \cfrac{\vert \sum_{i=1}^{M} R[i][M_p] \cdot R[i][M_q] \vert}{ \sqrt{\sum_{i=1}^{M} R[i][M_p]^2} \cdot \sqrt{\sum_{i=1}^{M} R[i][M_q]^2}}
+$$  
 
 Applying this similarity function, we get the following results:
-![cosine_sim](/assets/img/post_imgs/rec/cosine_sim.png)
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <img class="img-responsive img-rounded" src="/assets/img/post_imgs/rec/cosine_sim.png" alt="cosine_sim">
+  </div>
+  <div class="col-2"></div>
+</div>  
 
 Now all the system needs to figure out is how to generate new ratings given this notion of how similarity.  
-Given a movie that Arthur hasn't seen we take a weighted average of the movies with it's neighbours and generate a rating. The default value for unseen ratings is defined as the average of all of Arhtur's ratings.
-![rating_formula](/assets/img/post_imgs/rec/rating.png)
+Given a movie that Arthur hasn't seen we take a weighted average of the movies with it's neighbours and generate a rating.  
+(The default value for unseen ratings is defined as the average of all of Arthur's ratings).
+$$
+R[U_i][M_j] = \cfrac{\sum_{k=1,k \neq j}^{M} sim(M_k,M_j) \cdot R[U_i][M_k] }{\sum_{k=1,k \neq j}^{M} sim(M_k,M_j)}
+$$
+
 Thus when predicting ratings for a particular movie, ratings of similar movies have a greater impact on the predicted rating. That's it!  
 Using the above formula, we get the following predictions
 <table class="table table-responsive scroll">
@@ -144,12 +159,25 @@ According to our reccomendation engine, **Arthur should watch Movie 5 - Jumanji 
 What we described was only a simple system. We can do much better by tweaking the above system to get better recommendations. In this section, I will demonstrate some of the improvements that I did, using the same example as above.
 #### Biases
 every person in the above database has some bias when they rate movies. In the example above, Zaphod tends to give out 4-5 star reviews easily while Trillian is much more conservative. To remove this bias, we subtract the average rating of a user while calculating the similarity function.  
-The updated function is as follows:
-![sim_mod](/assets/img/post_imgs/rec/sim_mod.png)
+The updated function is as follows:  
+$$
+sim(M_p, M_q) = \cfrac{\sum_{i=1}^{M} (R[i][M_p]-\bar R_i) \cdot (R[i][M_q]-\bar R_i)}{ \sqrt{\sum_{i=1}^{M} (R[i][M_p]-\bar R_i)^2} \cdot \sqrt{\sum_{i=1}^{M} (R[i][M_1]-\bar R_i)^2}}
+$$
+
 Similarly, while predicting the ratings, we predict how high/low the rating will be relative to the average. This has the advantage of producing zeros in the empty values (since we fill it with the average value).  
-![rating_mod](/assets/img/post_imgs/rec/rating_mod.png)
+$$
+R[U_i][M_j] = \bar R_i + \cfrac{\sum_{k=1,k \neq j}^{M} sim(M_k,M_j) \cdot (R[U_i][M_k]-\bar R_i) }{\sum_{k=1,k \neq j}^{M} sim(M_k,M_j)}
+$$
+
 Let us see the correlation between the movies and our new predictions.
-![mod_sim](/assets/img/post_imgs/rec/mod_sim.png)
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <img class="img-responsive img-rounded" src="/assets/img/post_imgs/rec/mod_sim.png" alt="mod_sim">
+  </div>
+  <div class="col-2"></div>
+</div>  
+
 > From the above graph, it is clear that the movies Toy Story 1 and Toy Story 2 are very similar. And we can infer this from just their ratings and without any other information!  
 
 > Another interesting fact to note is that users who liked Toy Story 2 or Jumanji did not like 12 Angry men. This seems likely as the former are children's movies while the latter is a classic movie meant for adults.  
