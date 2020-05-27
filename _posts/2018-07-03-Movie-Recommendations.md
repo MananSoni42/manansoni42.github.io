@@ -2,7 +2,7 @@
 title: Movie Recommendations using Collaborative Filtering
 author: Manan Soni
 date: 2018-07-03 00:42:00 +0530
-categories: [Machine Learning,Unsupervised]
+categories: [Machine Learning,Other]
 tags: [computer science,machine learning,unsupervised learning,recommendation system,live,cool]
 demo: http://movie42-app.herokuapp.com/
 gh: https://github.com/MananSoni42/Movie-recommendations
