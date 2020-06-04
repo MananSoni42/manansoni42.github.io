@@ -2,7 +2,7 @@
 title: Learning web development
 author: Manan Soni
 date: 2019-10-20 00:42:00 +0530
-categories: [Web Development,Introduction]
+categories: [Projects,Web Development]
 tags: [computer science,web development,cs50]
 gh: https://github.com/MananSoni42/web-dev
 ---

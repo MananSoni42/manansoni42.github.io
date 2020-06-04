@@ -2,7 +2,7 @@
 title: Movie Recommendations using Collaborative Filtering
 author: Manan Soni
 date: 2018-07-03 00:42:00 +0530
-categories: [Machine Learning,Other]
+categories: [Projects,Machine Learning]
 tags: [computer science,machine learning,unsupervised learning,recommendation system,live,cool]
 demo: http://movie42-app.herokuapp.com/
 gh: https://github.com/MananSoni42/Movie-recommendations
@@ -121,7 +121,7 @@ Applying this similarity function, we get the following results:
 <div class="row">
   <div class="col-2"></div>
   <div class="col-8">
-    <img class="img-responsive img-rounded" src="/assets/img/post_imgs/rec/cosine_sim.png" alt="cosine_sim">
+    <img class="img-responsive img-rounded" src="/assets/img/projects/ml/cosine_sim.png" alt="cosine_sim">
   </div>
   <div class="col-2"></div>
 </div>  
@@ -173,7 +173,7 @@ Let us see the correlation between the movies and our new predictions.
 <div class="row">
   <div class="col-2"></div>
   <div class="col-8">
-    <img class="img-responsive img-rounded" src="/assets/img/post_imgs/rec/mod_sim.png" alt="mod_sim">
+    <img class="img-responsive img-rounded" src="/assets/img/projects/ml/mod_sim.png" alt="mod_sim">
   </div>
   <div class="col-2"></div>
 </div>  
