@@ -6,6 +6,7 @@ categories: [Projects,Machine Learning]
 tags: [computer science,machine learning,unsupervised learning,recommendation system,live,cool]
 demo: http://movie42-app.herokuapp.com/
 gh: https://github.com/MananSoni42/Movie-recommendations
+math: true
 ---
 
 You watch a few movies on Netflix, and it starts to know your taste. It identifies the films that you will like and recommends accordingly! How does it know?  

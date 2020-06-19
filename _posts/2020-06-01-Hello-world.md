@@ -30,17 +30,5 @@ While writing about these projects I realized the process was fun in itself as w
 └── Blog
     ├── General # My views about life, the universe and everything
     ├── Mathematics # Interesting Math puzzles, observations, etc
-    ├── Computer Science # Quirky algorithms, practical tips, etc
-    └── Miscellaneous # Posts that don't fit anywhere else
+    └── Computer Science # Quirky algorithms, practical tips, etc
 ```
-
-## Current plan
-* Complete this post
-* Why you should try Linux
-* USeful linux tools you should use
-* Write about ML
-  * An introduction to ML
-  * What are Neural Networks
-* A few math articles
-  * A non-scary math proof
-  * An introduction to infinity
