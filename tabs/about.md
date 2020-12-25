@@ -7,7 +7,7 @@ title: About
 # MIT License
 ---
 
-I am a coodardy[^footnote] programmer captivated by the beauty of Mathematics. On a mission to make machines intelligent so that I can finally do XYZ in peace. Check out some of my _cooler_ projects [here](https://manansoni42.github.io/tags/cool/)!
+I am a coodardy[^footnote] programmer captivated by the beauty of Mathematics. On a mission to make machines intelligent so that I can finally sleep in peace. Check out some of my _cooler_ projects [here](https://manansoni42.github.io/tags/cool/)!
 <hr>
 
 I am a third-year student at BITS Pilani pursuing a dual degree (bachelor's in Computer Science along with a master's in Mathematics). A huge Linux fan along with Vim (Have you tried [qutebrowser](https://qutebrowser.org/)?). I love reading novels ([HG2G](https://www.goodreads.com/book/show/386162.The_Hitchhiker_s_Guide_to_the_Galaxy) anyone?), playing Table Tennis, watching (and playing) Cricket. I can also solve the Rubik's cube.

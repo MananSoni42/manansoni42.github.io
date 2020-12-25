@@ -59,4 +59,4 @@ I have a separate post for this project. Check out [Project 1 - Books]({%post_ur
 ### Project 2 - Flack
 Check out [Project 2 - Flack]({%post_url 2019-12-16-CS50-Project-2%})
 ### Project 3 - Pizza
-Check out (project 3)link
+Check out [Project 2 - Pizza]({%post_url 2020-04-18-CS50-Project-3%})
