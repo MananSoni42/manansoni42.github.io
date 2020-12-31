@@ -160,6 +160,8 @@ defaults:
           label: Home
           url: /
 
+plugins:
+    - jemoji
 
 sass:
   sass_dir: /assets/css
