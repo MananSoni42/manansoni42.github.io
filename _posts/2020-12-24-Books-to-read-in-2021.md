@@ -18,45 +18,48 @@ My (frequently updated) wishlist of books to read in **2021**
 
 # Fiction
 
-## This decade
+## Recent
 
 | Books                          | status                  |
-|--------------------------------|-------------------------|
-| A visit from the goon squad    | :clock5:                |
+| ------------------------------ | ----------------------- |
+| A visit from the goon squad    | :ballot_box_with_check: |
+| A gentleman in Moscow          | :clock5:                |
+| The House in the Cerulean Sea  | :clock5:                |
+| My year of rest and relaxation | :clock5:                |
+| Circe                          | :bookmark:              |
 | The power                      | :clock5:                |
-| Gone girl                      | :clock5:                |
 | Train dreams                   | :clock5:                |
 | Bring up the bodies            | :clock5:                |
-| My year of rest and relaxation | :clock5:                |
-| The house in the cerulean sea  | :clock5:                |
 
 ## Classics
 
-| Books                          | status                  |
-|--------------------------------|-------------------------|
-| To kill a mockingbird          | :clock5:                |
-| A tale of two cities           | :clock5:                |
+| Books                 | status   |
+| --------------------- | -------- |
+| To kill a mockingbird | :clock5: |
+| A tale of two cities  | :clock5: |
+| The trial             | :clock5: |
 
 # Non-fiction
 
 ## Math
 
-| Books                                       | status                  |
-|---------------------------------------------|-------------------------|
-| Godel Escher Bach: an eternal golden thread | :clock5:                |
+| Books                                       | status   |
+| ------------------------------------------- | -------- |
+| Godel Escher Bach: an eternal golden thread | :clock5: |
 
 ## Philosophy
 
-| Books                          | status                  |
-|--------------------------------|-------------------------|
-| Sophie's world                 | :clock5:                |
-| What does it all mean          | :clock5:                |
-| Probems of philosophy          | :clock5:                |
+| Books                 | status   |
+| --------------------- | -------- |
+| Sophie's world        | :clock5: |
+| What does it all mean | :clock5: |
+| Probems of philosophy | :clock5: |
 
 ## Life, the universe and everything (else)
 
 | Books                                                  | status                  |
-|--------------------------------------------------------|-------------------------|
-| The art of science and engineering - learning to learn | :bookmark:              |
+| ------------------------------------------------------ | ----------------------- |
+| The art of science and engineering - learning to learn | :ballot_box_with_check: |
 | Thinking fast and slow                                 | :clock5:                |
 | Freakonomics                                           | :clock5:                |
+| Man's Search for Meaning                               | :clock5:                |
