@@ -21,7 +21,7 @@ gh: https://github.com/MananSoni42/numerical_analysis
 ## Intended audience
 
 - The ideal audience would be **undergraduate students** that have studied/are studying a course on Numerical Analysis.
-- This website is built for people who have *some* basic technical knowledge of the subject but are unable to understand the
+- This website is built for people who have *some* basic technical knowledge of the subject but are unable to understand the core material in an intuitive way
 - It is meant as a **visual guide** to Numerical Analysis
 
 ## Goals

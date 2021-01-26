@@ -26,18 +26,18 @@ My (frequently updated) wishlist of books to read in **2021**
 | A gentleman in Moscow          | :clock5:                |
 | The House in the Cerulean Sea  | :clock5:                |
 | My year of rest and relaxation | :clock5:                |
-| Circe                          | :bookmark:              |
+| Circe (audiobook)              | :ballot_box_with_check: |
 | The power                      | :clock5:                |
 | Train dreams                   | :clock5:                |
 | Bring up the bodies            | :clock5:                |
 
 ## Classics
 
-| Books                 | status   |
-| --------------------- | -------- |
-| To kill a mockingbird | :clock5: |
-| A tale of two cities  | :clock5: |
-| The trial             | :clock5: |
+| Books                 | status     |
+| --------------------- | ---------- |
+| To kill a mockingbird | :bookmark: | 
+| A tale of two cities  | :clock5:   |
+| The trial             | :clock5:   |
 
 # Non-fiction
 
