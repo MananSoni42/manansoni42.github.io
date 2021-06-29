@@ -23,9 +23,9 @@ My (frequently updated) wishlist of books to read in **2021**
 | Books                          | status                  |
 | ------------------------------ | ----------------------- |
 | A visit from the goon squad    | :ballot_box_with_check: |
-| A gentleman in Moscow          | :clock5:                |
+| A gentleman in Moscow          | :bookmark:              |
 | The House in the Cerulean Sea  | :clock5:                |
-| My year of rest and relaxation | :bookmark:              | 
+| My year of rest and relaxation | :ballot_box_with_check: |
 | Circe (audiobook)              | :ballot_box_with_check: |
 | The power                      | :clock5:                |
 | Train dreams                   | :clock5:                |
@@ -60,7 +60,7 @@ My (frequently updated) wishlist of books to read in **2021**
 | Books                                                  | status                  |
 | ------------------------------------------------------ | ----------------------- |
 | The art of science and engineering - learning to learn | :ballot_box_with_check: |
-| Thinking fast and slow                                 | :bookmark:              |
-| Freakonomics                                           | :clock5:                |
+| Thinking fast and slow                                 | :ballot_box_with_check: |
+| Freakonomics                                           | :ballot_box_with_check: |
 | Sapiens (audiobook)                                    | :ballot_box_with_check: |
 | Man's Search for Meaning                               | :clock5:                |
