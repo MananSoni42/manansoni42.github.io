@@ -20,16 +20,16 @@ My (frequently updated) wishlist of books to read in **2021**
 
 ## Recent
 
-| Books                          | status                  |
-| ------------------------------ | ----------------------- |
-| A visit from the goon squad    | :ballot_box_with_check: |
-| A gentleman in Moscow          | :bookmark:              |
-| The House in the Cerulean Sea  | :clock5:                |
-| My year of rest and relaxation | :ballot_box_with_check: |
-| Circe (audiobook)              | :ballot_box_with_check: |
-| The power                      | :clock5:                |
-| Train dreams                   | :clock5:                |
-| Bring up the bodies            | :clock5:                |
+| Books                          | status                            |
+| ------------------------------ | ----------------------------------|
+| A visit from the goon squad    | :ballot_box_with_check: :pushpin: |
+| A gentleman in Moscow          | :ballot_box_with_check:           |
+| The House in the Cerulean Sea  | :clock5:                          |
+| My year of rest and relaxation | :ballot_box_with_check:           |
+| Circe (audiobook)              | :ballot_box_with_check:           |
+| The power                      | :clock5:                          |
+| Train dreams                   | :clock5:                          |
+| Bring up the bodies            | :clock5:                          |
 
 ## Classics
 
@@ -49,18 +49,18 @@ My (frequently updated) wishlist of books to read in **2021**
 
 ## Philosophy
 
-| Books                 | status   |
-| --------------------- | -------- |
-| Sophie's world        | :clock5: |
-| What does it all mean | :clock5: |
-| Probems of philosophy | :clock5: |
+| Books                 | status     |
+| --------------------- |------------|
+| Sophie's world        | :bookmark: |
+| What does it all mean | :clock5:   |
+| Probems of philosophy | :clock5:   |
 
 ## Life, the universe and everything (else)
 
-| Books                                                  | status                  |
-| ------------------------------------------------------ | ----------------------- |
-| The art of science and engineering - learning to learn | :ballot_box_with_check: |
-| Thinking fast and slow                                 | :ballot_box_with_check: |
-| Freakonomics                                           | :ballot_box_with_check: |
-| Sapiens (audiobook)                                    | :ballot_box_with_check: |
-| Man's Search for Meaning                               | :clock5:                |
+| Books                                                  | status                            |
+| ------------------------------------------------------ | --------------------------------- |
+| The art of science and engineering - learning to learn | :ballot_box_with_check:           |
+| Thinking fast and slow                                 | :ballot_box_with_check:           |
+| Freakonomics                                           | :ballot_box_with_check:           |
+| Sapiens (audiobook)                                    | :ballot_box_with_check: :pushpin: |
+| Man's Search for Meaning                               | :clock5:                          |
