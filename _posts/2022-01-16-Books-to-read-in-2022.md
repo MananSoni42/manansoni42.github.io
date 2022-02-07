@@ -20,15 +20,15 @@ My (frequently updated) wishlist of books to read in **2022**
 
 ## Recent
 
-| Books                              | Status   |
-| ---------------------------------- | -------- |
-| The house in the cerulean sea      | :clock5: |
-| A million things                   | :clock5: |
-| The stranger diaries               | :clock5: |
-| The trial                          | :clock5: |
-| Guards! Guards!                    | :clock5: |
-| Mort                               | :clock5: |
-| Going postal                       | :clock5: |
+| Books                         | Status     |
+| ----------------------------- | ---------- |
+| The house in the cerulean sea | :clock5:   |
+| A million things              | :clock5:   |
+| The stranger diaries          | :clock5:   |
+| The trial                     | :clock5:   |
+| Guards! Guards!               | :bookmark: |
+| Mort                          | :clock5:   |
+| Going postal                  | :clock5:   |
 
 ## Classics
 
@@ -54,9 +54,9 @@ My (frequently updated) wishlist of books to read in **2022**
 
 ## Life, the universe and everything (else)
 
-| Books                               | status                  |
-| ----------------------------------- | ----------------------- |
-| Mans search for meaning (audiobook) | :bookmark:              |
-| Problems of Philosophy              | :clock5:                |
-| Atomic habits (audiobook)           | :ballot_box_with_check: |
-| The Code Breaker                    | :clock5:                |
+| Books                               | status                            |
+| ----------------------------------- | --------------------------------- |
+| Mans search for meaning (audiobook) | :ballot_box_with_check:           |
+| Problems of Philosophy              | :clock5:                          |
+| Atomic habits (audiobook)           | :ballot_box_with_check: :pushpin: |
+| The Code Breaker                    | :clock5:                          |
