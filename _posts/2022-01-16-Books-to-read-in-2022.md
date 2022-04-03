@@ -32,17 +32,17 @@ My (frequently updated) wishlist of books to read in **2022**
 
 ## Classics
 
-| Books                              | status   |
-| ---------------------------------- | -------- |
-| Mrs. Dalloway                      | :clock5: |
-| The tell-tale heart                | :clock5: |
-| The fall of the house of the usher | :clock5: |
-| The pit and the pendulum           | :clock5: |
-| The cask of amontillado            | :clock5: |
-| The metamorphosis                  | :clock5: |
-| The trial                          | :clock5: |
-| The castle                         | :clock5: |
-| A tale of two cities               | :clock5: |
+| Books                              | status                  |
+| ---------------------------------- | ----------------------- |
+| Mrs. Dalloway                      | :clock5:                |
+| The tell-tale heart                | :ballot_box_with_check: |
+| The fall of the house of the usher | :ballot_box_with_check: |
+| The pit and the pendulum           | :ballot_box_with_check: |
+| The cask of amontillado            | :ballot_box_with_check: |
+| The metamorphosis                  | :clock5:                |
+| The trial                          | :clock5:                |
+| The castle                         | :clock5:                |
+| A tale of two cities               | :clock5:                |
 
 # Non-fiction
 
@@ -60,3 +60,4 @@ My (frequently updated) wishlist of books to read in **2022**
 | Problems of Philosophy              | :clock5:                          |
 | Atomic habits (audiobook)           | :ballot_box_with_check: :pushpin: |
 | The Code Breaker                    | :clock5:                          |
+| Zero to One                         | :ballot_box_with_check:           |
