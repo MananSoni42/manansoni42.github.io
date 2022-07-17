@@ -4,7 +4,6 @@ author: Manan Soni
 date: 2020-11-29 00:42:00 +0530
 categories: [Projects,Math]
 tags: [computer science,mathematics,live]
-demo: http://na-bits.herokuapp.com/
 gh: https://github.com/MananSoni42/numerical_analysis
 ---
 

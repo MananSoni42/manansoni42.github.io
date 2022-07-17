@@ -8,14 +8,6 @@ tags: [mathematics]
 
 My (frequently updated) wishlist of books to read in **2021**
 
-| status                  | meaning           |
-|-------------------------|-------------------|
-| :ballot_box_with_check: | Finished          |
-| :clock5:                | Not read yet      |
-| :bookmark:              | Currently reading |
-| :pushpin:	              | Favourite         |
-
-
 # Fiction
 
 ## Recent
@@ -64,3 +56,13 @@ My (frequently updated) wishlist of books to read in **2021**
 | Freakonomics                                           | :ballot_box_with_check:           |
 | Sapiens (audiobook)                                    | :ballot_box_with_check: :pushpin: |
 | Man's Search for Meaning                               | :clock5:                          |
+
+***
+
+| status                  | meaning           |
+|-------------------------|-------------------|
+| :ballot_box_with_check: | Finished          |
+| :clock5:                | Not read yet      |
+| :bookmark:              | Currently reading |
+| :pushpin:	              | Favourite         |
+
